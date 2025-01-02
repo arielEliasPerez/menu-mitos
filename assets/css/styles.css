@@ -58,9 +58,18 @@ h1 {
   background-color: #6a0080;
   width: 100%;
   padding: 10px 0;
-  
   z-index: 1000;
   transition: top 0.3s ease-in-out; /* Suavidad al cambio */
+
+  overflow-x: auto; /* Permitir el desplazamiento horizontal */
+  white-space: nowrap; /* Evitar el salto de línea */
+  padding: 10px 0;
+  scrollbar-width: none; /* Ocultar la barra de desplazamiento en navegadores compatibles */
+  -ms-overflow-style: none; /* Ocultar la barra de desplazamiento en IE y Edge */
+}
+
+#navbar::-webkit-scrollbar {
+  display: none; /* Ocultar barra de desplazamiento en navegadores basados en WebKit */
 }
 
 .relative{
@@ -75,21 +84,35 @@ h1 {
 
 
 #navbar ul {
-  list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 15px; /* Espacio entre los elementos */
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+#navbar li {
+  display: inline-block; /* Asegurar que los elementos sean en línea */
 }
 
 #navbar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 #navbar a:hover {
   color: #ffa500; /* Resalta el enlace al pasar el cursor */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  #navbar {
+    padding: 5px 0;
+  }
 }
 
 /* Compensar el espacio del navbar fijo */
