@@ -5,30 +5,98 @@ body {
     color: #ffffff;
   }
   
-  #navbar {
-    background-color: #4b0082;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
+  /* Estilos generales del header */
+header {
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Contenedor de información (logo y redes sociales) */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Estilos de redes sociales */
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+  transition: transform 0.3s;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Navbar inicial */
+#navbar {
+  background-color: #6a0080;
+  width: 100%;
+  padding: 10px 0;
   
-  #navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-  }
-  
-  #navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
+  z-index: 1000;
+  transition: top 0.3s ease-in-out; /* Suavidad al cambio */
+}
+
+.relative{
+  position: relative; /* Posición inicial */
+}
+
+/* Cuando el navbar es fijo */
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #ffa500; /* Resalta el enlace al pasar el cursor */
+}
+
+/* Compensar el espacio del navbar fijo */
+main {
+  margin-top: 70px; /* Ajusta este valor si el navbar cambia de tamaño */
+}
+
   
   #search-bar {
     margin-top: 70px;
@@ -55,3 +123,4 @@ body {
     list-style: none;
   }
   
+
