@@ -39,7 +39,7 @@ const menuData = [
     { category: botellasCategory, name: "Federico Alvear", description: "Botella 750 ml con 2 Speed", price: 20000, img: imgPath + "" },
     { category: botellasCategory, name: "Chandón Rose/Aperitif/Delise/Extra Brut", description: "Botella 750 ml con 2 Speed.", price: 36000, img: imgPath + "" },
     { category: botellasCategory, name: "Skyy + Speed/Jugo", description: "Skyy con 2 Speed o un Jugo Baggio", price: 24000, img: imgPath + "" },
-    { category: botellasCategory, name: "Skyy + Srite", description: "Skyy con un Sprite de 1,75 L", price: 26000, img: imgPath + "" },
+    { category: botellasCategory, name: "Skyy + Sprite", description: "Skyy con un Sprite de 1,75 L", price: 26000, img: imgPath + "" },
     { category: botellasCategory, name: "Smirnoff + Speed/Jugo", description: "Smirnoff común con 2 Speed o un Jugo Baggio", price: 22000, img: imgPath + "" },
     { category: botellasCategory, name: "Smirnoff + Sprite", description: "Smirnoff común con un Sprite de 1,75 L", price: 23000, img: imgPath + "" },
     { category: botellasCategory, name: "Smirnoff Saborizado + Speed/Jugo", description: "Smirnoff saborizado a elección (Manzana Verde, Maracuyá, sandía, cítrico, frambueza) con 2 Speed o un Jugo Baggio", price: 24000, img: imgPath + "" },
@@ -48,12 +48,12 @@ const menuData = [
     { category: botellasCategory, name: "Jack Daniel's old N°7", description: "Botella 750 ml", price: 90000, img: imgPath + "" },
     { category: botellasCategory, name: "Black Label", description: "Botella 750 ml", price: 90000, img: imgPath + "" },
 
-    { category: tragosCategory, name: "Aperol Spritz", description: "Aperol, Espumante y dash de Tónica", price: 8000, img: imgPath + "" },
+    { category: tragosCategory, name: "Aperol Spritz", description: "Aperol y Champagne. Opcionalmente un dash de Tónica", price: 8000, img: imgPath + "" },
     { category: tragosCategory, name: "Blue Lagoon", description: "Vodka, Blue Curacao, Zumo de Limón y Sprite", price: 8000, img: imgPath + "" },
     { category: tragosCategory, name: "Caipirinha", description: "Lima machacada, azúcar, Cachaca y refresco Lima Limón", price: 9000, img: imgPath + "" },
     { category: tragosCategory, name: "Caipiroska", description: "Lima machacada, zúcar, Vodka y refresco Lima Limón", price: 8000, img: imgPath + "" },
     { category: tragosCategory, name: "Cuba Libre", description: "Ron, Zumo de limón y Coca-Cola", price: 8000, img: imgPath + "" },
-    { category: tragosCategory, name: "Daiquiri (Frutilla/Durazno/Maracuyá/Ananá/Melón)", description: "Pulpa de la fruta a elección, Azúcar, Zumo de limón y Ron", price: 9000, img: imgPath + "" },
+    { category: tragosCategory, name: "Daiquiri (Frutilla/Durazno/Maracuyá/Ananá/Melón)", description: "Ron, Pulpa de la fruta a elección, Azúcar y Zumo de limón", price: 9000, img: imgPath + "" },
     { category: tragosCategory, name: "Esperma de Pitufo", description: "Vodka, Blue Curacao, Piña colada y Pulpa de Ananá", price: 8000, img: imgPath + "" },
     { category: tragosCategory, name: "Garibaldi (Campari con Jugo)", description: "Medida de Campari y Jugo de Naranja", price: 8000, img: imgPath + "" },
     { category: tragosCategory, name: "Gin Tonic", description: "Copón de Gin con agua tónica y rodajas de limón. Consultar por rodajas de Pomelo", price: 9000, img: imgPath + "" },
@@ -73,8 +73,15 @@ const menuData = [
     { category: tragosCategory, name: "Tequila Sunrise", description: "Tequila, Jugo de naranja y dash de Granadina", price: 8000, img: imgPath + "" },
     { category: tragosCategory, name: "Tardío Tropical", description: "Cosecha Tardía, pulpa de Maracuyá y zumo de limón", price: 8000, img: imgPath + "" },
 
-    { category: sinAlcoholCategory, name: "Agua Mineral", description: "", price: 3000, img: imgPath + "" },
+    { category: sinAlcoholCategory, name: "Agua Mineral", description: "Botella de 250 ml", price: 3000, img: imgPath + "" },
     { category: sinAlcoholCategory, name: "Coca-Cola Lata", description: "", price: 3000, img: imgPath + "" },
+    { category: sinAlcoholCategory, name: "Jugo Baggio", description: "Jugo Baggio", price: 6000, img: imgPath + "" },
+    { category: sinAlcoholCategory, name: "Coca-Cola 1,75 Litro", description: "", price: 7000, img: imgPath + "" },
+    { category: sinAlcoholCategory, name: "Coca-Cola 2,25 Litro", description: "", price: 8000, img: imgPath + "" },
+    { category: sinAlcoholCategory, name: "Sprite 1,75 Litro", description: "", price: 7000, img: imgPath + "" },
+    { category: sinAlcoholCategory, name: "Sprite 2,25 Litro", description: "", price: 8000, img: imgPath + "" },
+    { category: sinAlcoholCategory, name: "Speed", description: "Jugo Baggio", price: 4000, img: imgPath + "" },
+
 
     { category: acompañamientoCategory, name: "Maní Salado", description: "Mini pote de Maní", price: 1000, img: imgPath + "" },
   ];
