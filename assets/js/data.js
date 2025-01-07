@@ -4,7 +4,7 @@ const cervezasCategory = "Cervezas";
 const botellasCategory = "Botellas";
 const tragosCategory = "Tragos";
 const sinAlcoholCategory = "Sin Alcohol";
-const acompañamientoCategory = "Promos";
+const acompañamientoCategory = "acompañamientos";
 
 const imgPath = "../img/";
 const validPromotionDays = "PROMO VÁLIDA LOS DÍAS MIERCOLES, JUEVES, SÁBADOS Y DOMINGOS, HASTA LAS 22:00."
