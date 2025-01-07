@@ -1,3 +1,18 @@
+// Función para crear el diseño de cada ítem
+const createMenuItem = (item) => {
+    const menuItem = document.createElement("div");
+    menuItem.classList.add("menu-item");
+
+    menuItem.innerHTML = `
+      <img src="${item.img}" alt="${item.name}">
+      <h3>${item.name}</h3>
+      <p>${item.description}</p>
+      <div class="price">$${item.price}</div>
+    `;
+
+    return menuItem;
+  };
+
 function renderMenu(data) {
     const menuContainer = document.getElementById("menu");
     menuContainer.innerHTML = ""; //clean up old content
@@ -10,12 +25,15 @@ function renderMenu(data) {
 
         const list = document.createElement("ul");
         data.filter(item => item.category === category).forEach(item => {
-            const listItem = document.createElement("li");
-            listItem.textContent = `${item.name} - $${item.price}`;
-            list.appendChild(listItem);
+            const menuItem = createMenuItem(item);
+            list.appendChild(menuItem);
         });
 
         section.appendChild(list);
         menuContainer.appendChild(section);
     });
 }
+
+
+
+  
