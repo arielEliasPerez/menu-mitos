@@ -5,9 +5,11 @@ const createMenuItem = (item) => {
 
     menuItem.innerHTML = `
       <img src="${item.img}" alt="${item.name}">
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <div class="price">$${item.price}</div>
+      <div class="menu-item-content">
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <div class="price">$${item.price}</div>
+      </div>
     `;
 
     return menuItem;

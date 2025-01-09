@@ -135,17 +135,17 @@ main {
   
 
 
-  /* Contenedor de los ítems del menú */
+/* Contenedor de los ítems del menú */
 .menu-item {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Cambiar a diseño de fila */
   align-items: center;
-  background-color: #fff;
+  background-color: #000; /* Fondo negro */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   margin: 10px;
-  max-width: 300px;
+  max-width: 600px;
+  color: #fff; /* Texto blanco para buen contraste */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -156,34 +156,43 @@ main {
 
 /* Imagen del ítem */
 .menu-item img {
-  width: 100%;
-  height: auto;
+  width: 120px; /* Tamaño fijo para las imágenes */
+  height: 120px;
+  object-fit: cover; /* Mantener proporción */
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-right: 15px; /* Espacio entre la imagen y el contenido */
+}
+
+/* Contenedor de texto */
+.menu-item-content {
+  flex: 1; /* Usar el resto del espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Nombre del ítem */
 .menu-item h3 {
   font-size: 1.5rem;
-  color: #6a0080;
-  margin: 10px 0;
+  color: #ffa500; /* Buen contraste con el fondo negro */
+  margin: 5px 0;
 }
 
 /* Descripción del ítem */
 .menu-item p {
   font-size: 1rem;
-  color: #555;
-  margin: 10px 0;
-  text-align: center;
+  color: #ccc; /* Contraste adecuado para texto secundario */
+  margin: 5px 0;
 }
 
 /* Precio */
 .menu-item .price {
   font-weight: bold;
-  color: #ff5722;
+  color: #00ff00; /* Contraste alto para destacar */
   font-size: 1.2rem;
   margin-top: 10px;
 }
+
 
   
 
