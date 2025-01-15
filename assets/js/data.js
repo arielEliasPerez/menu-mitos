@@ -45,7 +45,7 @@ const menuData = [
     { category: botellasCategory, name: "Fernet + Coca-Cola", description: "Botella de Fernet Branca de 750 ml + Botella de Coca-Cola.", price: 45000, img: imgPath + botellasCategory + "/fernet.jpg" },
     { category: botellasCategory, name: "Gin + Tónica", description: "Botella de Gin + Botella de Agua tónica.", price: 45000, img: imgPath + botellasCategory + "/gin.jpg" },
     { category: botellasCategory, name: "Hodlmoser", description: "Botella de Hodlmoser + 2 Speed.", price: 60000, img: imgPath + botellasCategory + "/hodlmoser.jpg" },
-    { category: botellasCategory, name: "Sernova + Sprite", description: "Sernova con un Sprite de 1,75 L", price: 27000, img: imgPath + botellasCategory + "/sernovaSprite.jpg" },
+    { category: botellasCategory, name: "Sernova + Sprite", description: "Sernova con un Sprite de 1,75 L", price: 27000, img: imgPath + botellasCategory + "/sernova.jpg" },
     { category: botellasCategory, name: "Skyy + Speed/Jugo", description: "Skyy con 2 Speed o un Jugo Baggio", price: 25000, img: imgPath + botellasCategory + "/skyySpeed.jpg" },
     { category: botellasCategory, name: "Skyy + Sprite", description: "Skyy con un Sprite de 1,75 L", price: 27000, img: imgPath + botellasCategory + "/skyySprite.jpg" },
     { category: botellasCategory, name: "Smirnoff + Speed/Jugo", description: "Smirnoff común con 2 Speed o un Jugo Baggio", price: 24000, img: imgPath + botellasCategory + "/smirnoffSpeed.jpg" },
@@ -83,7 +83,7 @@ const menuData = [
     { category: tragosCategory, name: "Tequila Sunrise", description: "Tequila, Jugo de naranja y dash de Granadina", price: 8000, img: imgPath + tragosCategory + "/tequilaSunrise.jpg" },
 
     { category: sinAlcoholCategory, name: "Agua Mineral", description: "Botella de 250 ml", price: 3000, img: imgPath + sinAlcoholCategory + "/agua.jpg" },
-    { category: sinAlcoholCategory, name: "Daiquiri Sin Alcohol", description: "Sabores: Frutilla, Durazno, Maracuyá, Ananá o Melón.", price: 10000, img: imgPath + tragosCategory + "/daiquiriSinAlcohol.jpg" },
+    { category: sinAlcoholCategory, name: "Daiquiri Sin Alcohol", description: "Sabores: Frutilla, Durazno, Maracuyá, Ananá o Melón.", price: 10000, img: imgPath + sinAlcoholCategory + "/daiquiriSinAlcohol.jpg" },
     { category: sinAlcoholCategory, name: "Coca-Cola Lata", description: "", price: 3000, img: imgPath + sinAlcoholCategory + "/cocaLata.jpg" },
     { category: sinAlcoholCategory, name: "Jugo Baggio", description: "Jugo Baggio", price: 6000, img: imgPath + sinAlcoholCategory + "/baggio.jpg" },
     { category: sinAlcoholCategory, name: "Speed", description: "Jugo Baggio", price: 5000, img: imgPath + sinAlcoholCategory + "/speed.jpg" },
